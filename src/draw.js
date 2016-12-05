@@ -134,10 +134,10 @@ draw = function(stateCount) {
 				}
 			},
 			series: [{
-				name: 'Breed_C',
+				name: 'All Breed_C',
 				data: sum_C
 			}, {
-				name: 'Breed_NC',
+				name: 'All Breed_NC',
 				data: sum_NC
 			}, {
 				name: 'Breed_N Lost',

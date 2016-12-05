@@ -10,13 +10,13 @@
 
 ![image](https://raw.githubusercontent.com/JianghanLi/AgentTest/master/img/Breed.png)
 - Figure explication:
-    In this diagram, all blue rectangle belong to Breed_C and all orange rectangle belong to Breed_NC. The arrows show the possible transformation for the next year.
+  In this diagram, all blue rectangle belong to Breed_C and all orange rectangle belong to Breed_NC. The arrows show the possible transformation for the next year.
 
 -  Breed Relost
-I add the concept "Breed Relost" (Switched to C, then back to NC) as the simple reason that there is "Breed Regained". It helps to distinguish from a simple Breed_Lost. 
+  I add the concept "Breed Relost" (Switched to C, then back to NC) as the simple reason that there is "Breed Regained". It helps to distinguish from a simple Breed_Lost. 
 
 - Important hypothesis
-    If NC -> C -> NC -> C, I take it as a Breed_Regained, beacuse it also satisfies the definition of Breed_Regained(C -> NC -> C).
+  If NC -> C -> NC -> C, I take it as a Breed_Regained, beacuse it also satisfies the definition of Breed_Regained(C -> NC -> C).
 
 
 ### Tech used

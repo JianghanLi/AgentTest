@@ -56,6 +56,16 @@ main = function(factor) {
 
 	//draw the results
 	draw(stateCount);
+
+	//download output
+	var aLink = $('#download')[0];
+    var blob = new Blob([JSON.stringify(state)]);
+    var evt = document.createEvent("HTMLEvents");
+    evt.initEvent("click", false, false);
+    aLink.download = 'output.json';
+    aLink.href = URL.createObjectURL(blob);
+    aLink.dispatchEvent(evt);
+
 	return 1;
 }
 

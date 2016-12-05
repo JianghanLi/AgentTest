@@ -22,24 +22,48 @@
 
 <body>
   <h1>Agent Test</h1>
-  <!-- Get the  Breed Factor-->
 
+  <!-- Breed Transfer Diagram-->
   <div style="text-align:center">
     <img src="img/Breed.png"  alt="Breed Transfer Diagram"/>
   </div>
+  <div style="margin: 50px 100px"> 
+    <h2>- Figure explication:</h2> 
+    <p>In this diagram, all blue rectangle belong to Breed_C and all orange rectangle belong to Breed_NC. The arrows show the possible transformation for the next year.</p>
+     
+    <h2>- Breed Relost</h2>
+    <p>I add the concept "Breed Relost" (Switched to C, then back to NC) as the simple reason that there is "Breed Regained". It helps to distinguish from a simple Breed_Lost. </p>
 
+    <h2>- Important hypothesis</h2>
+    <p>If NC -> C -> NC -> C, I take it as a Breed_Regained, beacuse it also satisfies the definition of Breed_Regained(C -> NC -> C).</p>
+  </div>
+
+  <!-- Input Breed Factor-->
   <h1>Enter your Breed Factor:</h1> 
-  <div style="width: 300px; margin: 50px auto">
+  <div style="text-align:center">
     <input type="range" min="0.1" max="2.9" step="0.1" id="input1" value="1.5" onchange='$("#input2").val(this.value)'/>
     <input type="number" min="0.1" max="2.9" step="0.1" id="input2" value="1.5" onchange='$("#input1").val(this.value)'/>
     <button id="runButton" onclick='main($("#input1").val())'> Run </button>
   </div>
+
   <!-- Draw the result-->
-  <h1>Results:</h1> 
+  <h1>Results visualisation:</h1> 
   <div id="container1" style="width: 1000px; height: 500px; margin: 50px auto"></div>
   <div id="container2" style="width: 1000px; height: 500px; margin: 50px auto"></div>
 
- </script>
 
+  <!-- Download the result-->
+  <h1>OutPut:</h1>
+  <div style="margin-left: 100px">
+    <p>0 = Auto_Renew</p>
+    <p>1 = Breed_NC</p>
+    <p>2 = Breed_C</p>
+    <p>3 = Breed_C Lost (Switched to Breed_NC)</p>
+    <p>4 = Breed_C Gained (Switch from Breed_NC)</p>
+    <p>5 = Breed_C Relost (Switched to C, then back to NC)</p>
+    <p>6 = Breed_C Regained (Switched to NC, then back to C)</p>
+    <a href="javaScript:void(0);" id="download">Download Results</a>
+  </div>
+  
 </body>
 </html>
