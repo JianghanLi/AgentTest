@@ -55,10 +55,17 @@ However, you don't need to relance the command as it has already been added to p
         └── run.js
 
 
+### Conclusion
+  I firstly thought about using scala and trying scala.js. Scala is good at the treating the data in lines with plenty of useful operators. However, I finally chose simple javascript in order to  refrain from complicated/niche dev environments.
 
+  In this small project, I have tried to creat a simulation code environment. I was able to work with data and equations and translate that into code.
+
+  I hope that you'll find my work clear, robust and extendable.
 
 
 **Thanks for your attention.**
+**Thank M.John Andrews and M.Jonathan Bakeryour for their helps.**
+**Enjoy.**
 
    [jQuery]: <http://jquery.com>
    [Lodash]: <https://lodash.com/>
