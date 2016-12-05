@@ -6,7 +6,7 @@
   - Dowload the result charts if you want.
 
 
-# Some remarks about the question
+## Some remarks about the question
 
 ![image](https://raw.githubusercontent.com/JianghanLi/AgentTest/master/img/Breed.png)
 - Figure explication:
@@ -19,7 +19,7 @@
   If NC -> C -> NC -> C, I take it as a Breed_Regained, beacuse it also satisfies the definition of Breed_Regained(C -> NC -> C).
 
 
-### Tech used
+## Tech used
 
 I have used a number of open source projects to work properly:
 
@@ -28,14 +28,15 @@ I have used a number of open source projects to work properly:
 * [Lodash] - A JavaScript utility library delivering consistency, modularity, performance.
 * [Highcharts] - Interactive JavaScript charts.
 
-### Prepare
+
+## Prepare
 I wrote a python script `json.py` to parse the xlsx into a json file. Then I execute the following command in the terminal to generate `data.json`.
 ```sh
 $ pyhton json.py > data.json
 ```
 However, you don't need to relance the command as it has already been added to project.
 
-### File Directory
+## File Directory
 3 directories, 11 files
     
     .
@@ -55,7 +56,7 @@ However, you don't need to relance the command as it has already been added to p
         └── run.js
 
 
-### Conclusion
+## Conclusion
   I firstly thought about using scala and trying scala.js. Scala is good at the treating the data in lines with plenty of useful operators. However, I finally chose simple javascript in order to  refrain from complicated/niche dev environments.
 
   In this small project, I have tried to creat a simulation code environment. I was able to work with data and equations and translate that into code.
@@ -63,7 +64,7 @@ However, you don't need to relance the command as it has already been added to p
   I hope that you'll find my work clear, robust and extendable.
 
 
-**Thanks for your attention.**
+**Thanks for your attention. **
 **Thank M.John Andrews and M.Jonathan Bakeryour for their helps.**
 **Enjoy.**
 
